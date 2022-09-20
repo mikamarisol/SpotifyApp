@@ -1,7 +1,7 @@
-package com.example.spotifyapp.dependencies.scopes
+package com.example.spotifyapp.core.dependencies.scopes
 
 import javax.inject.Scope
 
 @Scope
 @kotlin.annotation.Retention(AnnotationRetention.RUNTIME)
-annotation class ActivityScope
+annotation class FragmentScope

@@ -1,4 +1,4 @@
-package com.example.spotifyapp.dependencies
+package com.example.spotifyapp.core.dependencies.modules
 
 import androidx.appcompat.app.AppCompatActivity
 import dagger.Module
