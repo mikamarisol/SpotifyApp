@@ -12,12 +12,12 @@ ext {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.spotifyapp"
         minSdk 30
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -41,7 +41,7 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -58,10 +58,10 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:${daggerVersion}"
 
     // retrofit - responsible for http network requests
-    implementation "com.squareup.retrofit2:retrofit:${retrofit2Version}"
+    implementation "com.squareup.retrofit2:retrofit"
     implementation "com.squareup.retrofit2:retrofit:converter-gson:${retrofit2Version}"
     implementation "com.squareup.retrofit2:retrofit:adapter-rxjava:${retrofit2Version}"
-    implementation "come.squareup.okhttp3:logging-interceptor:${okHttpLibVersion}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${okHttpLibVersion}"
 
     // rxjava kicks off network request
     implementation "io.reactivex.rxjava3:rxjava:${rxJava3Version}"

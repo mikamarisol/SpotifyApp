@@ -21,7 +21,7 @@ import javax.inject.Singleton
     ]
 )
 
-interface ApplicationComponent : AndroidInjector<CoreApplication> {
+interface ApplicationComponent : AndroidInjector<DaggerApplication> {
 
     @Component.Builder
     interface Builder {
@@ -32,6 +32,6 @@ interface ApplicationComponent : AndroidInjector<CoreApplication> {
 
     }
 
-    override fun inject(instance: CoreApplication) {
+    override fun inject(instance: DaggerApplication) {
     }
 }

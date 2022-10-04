@@ -6,7 +6,7 @@ import dagger.android.DaggerApplication
 
 abstract class CoreApplication: DaggerApplication() {
 
-    abstract val appComponent = ApplicationComponent
+    abstract val appComponent : ApplicationComponent
 
     override fun applicationInjector() = appComponent
 
