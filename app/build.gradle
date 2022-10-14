@@ -58,9 +58,9 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:${daggerVersion}"
 
     // retrofit - responsible for http network requests
-    implementation "com.squareup.retrofit2:retrofit:${retrofit2Version}"
-    implementation "com.squareup.retrofit2:converter-gson:${retrofit2Version}"
-    implementation "com.squareup.retrofit2:adapter-rxjava:${retrofit2Version}"
+    implementation "com.squareup.retrofit2:retrofit"
+    implementation "com.squareup.retrofit2:retrofit:converter-gson:${retrofit2Version}"
+    implementation "com.squareup.retrofit2:retrofit:adapter-rxjava:${retrofit2Version}"
     implementation "com.squareup.okhttp3:logging-interceptor:${okHttpLibVersion}"
 
     // rxjava kicks off network request
