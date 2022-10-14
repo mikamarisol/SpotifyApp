@@ -1,4 +1,9 @@
 package com.example.spotifyapp.core.dependencies.modules
 
-class ApplicationModule {
+import androidx.appcompat.app.AppCompatActivity
+import dagger.Module
+import dagger.android.AndroidInjector
+
+@Module
+abstract class ApplicationModule: AndroidInjector<AppCompatActivity> {
 }
